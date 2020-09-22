@@ -11,14 +11,11 @@ import requests
 import pandas as pd
 
 
-# In[2]:
-
-
 import warnings
 warnings.filterwarnings('ignore')
 
 
-# In[52]:
+
 
 
 def process_json(result_data):
@@ -45,7 +42,7 @@ def process_json(result_data):
     return result_data1
 
 
-# In[53]:
+
 
 
 # 所有的id和城市名称数据
@@ -95,7 +92,7 @@ def get_all_citys():
     return citys
 
 
-# In[55]:
+
 
 
 def generate_phones(num, areas):
@@ -136,7 +133,7 @@ def generate_phones(num, areas):
     return phones
 
 
-# In[67]:
+
 
 
 def main(city):
@@ -144,94 +141,6 @@ def main(city):
     phone=generate_phones(100, citys[city])
     df=pd.DataFrame(phone,columns={'tel'})
     return df
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[48]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
